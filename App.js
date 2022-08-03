@@ -2,16 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import Home from './screens/Home';
-import Art from './screens/Art';
-import Pet from './screens/Pet';
-import Hospital from './screens/Hospital';
-import Tech from './screens/Tech';
-import Youth from './screens/Youth';
-import Event from './screens/Event';
+import Home from './screen/Home';
+import Tech from './screen/Tech';
+import Youth from './screen/Youth';
+import Hospital from './screen/Hospital';
+import Event from './screen/Event';
+import Pet from './screen/Pet';
+import Art from './screen/Art';
+import firestore from '@react-native-firebase/firestore';
+
+
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
+
+
 
     <NavigationContainer>
       {<Stack.Navigator>
@@ -28,6 +33,7 @@ export default function App() {
       </Stack.Navigator>}
 
     </NavigationContainer>
+
   );
 }
 

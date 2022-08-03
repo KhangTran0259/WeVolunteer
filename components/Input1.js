@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, TextInput, View, StyleSheet } from 'react-native';
+import { GlobalStyles } from '../constant/style';
 
 function Input1({ label, textInputConfig }) {
     const inputStyles = [styles.input];
@@ -25,12 +26,12 @@ const styles = StyleSheet.create({
     label: {
         fontSize: 12,
         marginBottom: 4,
-        color: '#5721d4',
+        color: GlobalStyles.colors.primary100,
 
     },
     input: {
-        backgroundColor: '#c6affc',
-        color: '#a281f0',
+        backgroundColor: GlobalStyles.colors.primary100,
+        color: GlobalStyles.colors.primary700,
         padding: 6,
         borderRadius: 6,
         fontSize: 18,

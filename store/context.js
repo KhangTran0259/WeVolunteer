@@ -2,23 +2,35 @@ import { createContext, useReducer } from 'react';
 
 const DUMMY_EXPENSES = [
     {
-        id: 'e1',
-        description: 'A pair of shoes',
-        amount: 59.99,
-        date: new Date('2021-12-19'),
+        name: 'Tutor Student',
+        date: '7/18/2022',
+        address: '7800 Alton Ave,CA 92412',
+        description: 'dfdsfsdf',
     },
     {
-        id: 'e2',
-        description: 'A pair of trousers',
-        amount: 89.29,
-        date: new Date('2022-01-05'),
+        name: 'Mentor a child',
+        date: '7/18/2022',
+        address: '7800 Alton Ave,CA 92412',
+        description: 'sdfsdfsdf',
+    },
+    {
+        name: 'Coaching',
+        date: '7/18/2022',
+        address: '7800 Alton Ave,CA 92412',
+        description: 'sdfsdf',
+    },
+    {
+        name: 'Reading Program',
+        date: '7/18/2022',
+        address: '7800 Alton Ave,CA 92412',
+        description: 'dsfsdf',
     },
 
 ];
 
 export const ExpensesContext = createContext({
     expenses: [],
-    addExpense: ({ description, amount, date }) => { },
+    addExpense: ({ description, name, date, address }) => { },
     deleteExpense: (id) => { },
     updateExpense: (id, { description, amount, date }) => { },
 });

@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button, StyleSheet, View, Image, TouchableOpacity, onPress, Text } from 'react-native'
-function Hospital() {
+import Upcoming from './Upcoming'
+function Youth() {
     return (
-        <Text>
-            wsdrfdf
-        </Text>
+        <View>
+            <Upcoming />
+        </View>
+
     )
 }
 
-export default Hospital
+export default Youth
